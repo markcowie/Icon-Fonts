@@ -12,15 +12,19 @@ span {
     color: transparent;
 }
 
-span:after {
+span:before {
     font: 200px 'WebSymbolsRegular';
     color: #000;
+    content: "."; /* Default character */
 }
 
-span.test1:after {
-    content: "x";
+[data-icon]:before {
+    font: 0/0 a;
+    color: transparent;
 }
 
-span.test2:after {
+[data-icon]:after {
+    font: 200px 'WebSymbolsRegular';
+    color: #000;
     content: attr(data-icon);
 }
