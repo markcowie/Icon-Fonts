@@ -20,7 +20,7 @@ html.lt-ie8 span {
 
 span:before,
 span:after {
-    font: 100px 'WebSymbolsRegular';
+    font: 100px/100px 'WebSymbolsRegular';
     color: #000;
 }
 
