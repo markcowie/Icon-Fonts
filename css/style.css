@@ -9,22 +9,40 @@
 
 span {
     font: 0/0 a;
+    text-shadow: none;
     color: transparent;
+}
+
+html.lt-ie8 span {
+    position: relative;
+    left: -999px;
+}
+
+span:before,
+span:after {
+    font: 100px 'WebSymbolsRegular';
+    color: #000;
+}
+
+html.lt-ie8 span:before,
+html.lt-ie8 span:after {
+    position: relative;
+    left: 999px;
 }
 
 span:before {
-    font: 200px 'WebSymbolsRegular';
-    color: #000;
-    content: "."; /* Default character */
+    content: ":"; /* Default */
 }
 
-[data-icon]:before {
-    font: 0/0 a;
-    color: transparent;
-}
-
-[data-icon]:after {
-    font: 200px 'WebSymbolsRegular';
-    color: #000;
+span:after {
     content: attr(data-icon);
+    display: none;
+}
+
+span[data-icon]:before {
+    display: none;
+}
+
+span[data-icon]:after {
+    display: inline;
 }
