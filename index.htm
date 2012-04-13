@@ -1,20 +1,24 @@
 <!doctype html>
-    <!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
-    <!--[if IE 7]><html class="lt-ie9 lt-ie8" lang="en"><![endif]-->
-    <!--[if IE 8]><html class="lt-ie9" lang="en"><![endif]-->
-    <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+    <!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7 nojs" lang="en"><![endif]-->
+    <!--[if IE 7]><html class="lt-ie9 lt-ie8 nojs" lang="en"><![endif]-->
+    <!--[if IE 8]><html class="lt-ie9 nojs" lang="en"><![endif]-->
+    <!--[if gt IE 8]><!--><html class="nojs" lang="en"><!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <title>Icon Fonts</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-1.7.2.min.js"></script>
+        <script>
+            $("html").removeClass("nojs");
+        </script>
     </head>
     <body>
-    
+
         <!-- Utilises the default character -->
         <span>Some text</span>
 
         <!-- Utilises the character specified in the 'data-icon' attribute -->
-        <span data-icon=";">Some text</span>
+        <span data-icon="q">Some text</span>
 
     </body>
     <!--[if lt IE 9]>

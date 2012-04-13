@@ -13,6 +13,10 @@ span {
     color: transparent;
 }
 
+.nojs span {
+    display: none;
+}
+
 html.lt-ie8 span {
     position: relative;
     left: -999px;
