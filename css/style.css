@@ -13,12 +13,12 @@ span {
     color: transparent;
 }
 
-html.lt-ie8 span {
+.lt-ie8 span {
     position: relative;
     left: -999px;
 }
 
-html.lt-ie8 body.nojs span {
+.lt-ie8 .no-js span {
     display: none;
 }
 
@@ -28,8 +28,8 @@ span:after {
     color: #000;
 }
 
-html.lt-ie8 span:before,
-html.lt-ie8 span:after {
+.lt-ie8 span:before,
+.lt-ie8 span:after {
     position: relative;
     left: 999px;
 }
